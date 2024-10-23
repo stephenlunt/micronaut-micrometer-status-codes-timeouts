@@ -1,28 +1,22 @@
-## Micronaut 4.6.3 Documentation
+## Micronaut Micrometer - Custom Status Code Timeouts
 
-- [User Guide](https://docs.micronaut.io/4.6.3/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.6.3/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.6.3/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+### Running the project
 
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-- [Micronaut Gradle Plugin documentation](https://micronaut-projects.github.io/micronaut-gradle-plugin/latest/)
-- [GraalVM Gradle Plugin documentation](https://graalvm.github.io/native-build-tools/latest/gradle-plugin.html)
-## Feature micronaut-aot documentation
+Tests replicating the issue:
 
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
+```
+./gradlew test
+```
 
+Run the application:
 
-## Feature ksp documentation
+```
+./gradlew run
+```
 
-- [Micronaut Kotlin Symbol Processing (KSP) documentation](https://docs.micronaut.io/latest/guide/#kotlin)
+Run the Wiremocks via docker (not needed for the tests):
 
-- [https://kotlinlang.org/docs/ksp-overview.html](https://kotlinlang.org/docs/ksp-overview.html)
-
-
-## Feature serialization-jackson documentation
-
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
-
+```
+docker-compose -f docker-compose.yml up --build
+```
 
