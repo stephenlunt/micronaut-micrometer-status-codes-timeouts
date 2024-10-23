@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  timeout-wiremock:
+    image: "wiremock/wiremock:latest"
+    container_name: timeout-wiremock
+    ports:
+      - "8086:8086"
+    volumes:
+      - ./extensions:/var/wiremock/extensions
+      - ./src/test/resources/wiremock:/home/wiremock
+    entrypoint: [ "/docker-entrypoint.sh", "--port=8086", "--global-response-templating", "--disable-gzip", "--verbose" ]

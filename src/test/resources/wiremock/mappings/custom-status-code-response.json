@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/wiremock-custom-status-code"
+  },
+  "response": {
+    "status": 520,
+    "bodyFileName": "custom-status-code-response-body.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
